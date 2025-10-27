@@ -13,7 +13,7 @@ class Dice {
   explicit Dice(int nbSides);
   Dice(const Dice &other);
   ~Dice() = default;
-  [[nodiscard]] int roll() const;
+  [[nodiscard]] virtual int roll() const;
   [[nodiscard]] int roll(int nbRolls) const;
   [[nodiscard]] int getNbSides() const;
 };
